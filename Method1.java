@@ -12,9 +12,8 @@ public class Method1{
     public static void sayMyname(String nama, int umur){
         System.out.println("Nama saya adalah "+nama+". dan berumur "+umur);
     }
-    
-    public static void main(String[] args){
-        Perkenalan();
-        sayMyname("Versailes",58);
+
+    public static int luasPersegi(int sisi){
+        return sisi*sisi;
     }
 }
