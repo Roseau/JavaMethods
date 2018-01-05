@@ -15,16 +15,28 @@ public class AplikasiMethod2{
     public static void luasPersegi(int sisi){
         System.out.println("Luas dari persegi dengan sisi "+sisi+" adalah : "+sisi*sisi);
     }
-    public static void tampilPersegi(int s){
+    private static void tampilPersegi(int s){
         for(int i=0;i<s;i++){
             for(int j=0;j<s;j++){
-                System.out.print("#");
+                if(i==j){
+                    System.out.print("#");
+                }else{
+                    System.out.print("&");
+                }
             }
-            System.out.println("");
+            if(i%2==0){
+                System.out.println("---");
+            }else{
+                System.out.println("%");
+            }
+            
         }
     }
     public static String Surprise(){
         return Scare();
+    }
+    public static void printPersegi(int s){
+        tampilPersegi(s);     
     }
 
 }
